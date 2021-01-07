@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= render 'shared/header' %>
+    </header>
+    <main id="<%= controller.controller_name %>-<%= controller.action_name %>">
+      <%= yield %>
+    </main>
   </body>
 </html>
