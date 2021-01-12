@@ -24,12 +24,14 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 header {
-  width: 30%;
+  min-width: 20%;
   border-right: solid 1px rgb(231, 228, 228);
   height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 header .logo a{
@@ -37,7 +39,7 @@ header .logo a{
   font-weight: bold;
   color: rgb(44, 150, 44);
   padding: 20px;
-  border-radius: 50%;
+  border-radius: 30px;
 }
 
 header .logo a:hover {
@@ -45,6 +47,7 @@ header .logo a:hover {
 }
 
 header ul {
+  margin-top: 20px;
   text-align: left;
   padding-left: 0;
 }
