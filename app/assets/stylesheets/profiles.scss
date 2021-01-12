@@ -113,9 +113,44 @@
       }
     }
     .explanation {
+      margin-bottom: 10px;
       p {
         margin: 0 40px;
         line-height: 1.8;
+      }
+    }
+
+    .item-list {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      border-top: solid 1px rgb(231, 228, 228);
+      border-bottom: solid 1px rgb(231, 228, 228);
+
+      li {
+        border-right: solid 1px rgb(231, 228, 228);
+        width: 100%;
+        text-align: center;
+      }
+
+      li:last-child {
+        border-right: none;
+      }
+
+      li a {
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+      }
+
+      li a:hover {
+        color: rgb(44, 150, 44);
+        background-color: rgb(232, 248, 232);
       }
     }
   }
