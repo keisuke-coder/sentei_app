@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  name: MyString
+  employee_num: 1
+  start_time: 2021-01-13 22:11:31
+  ending_time: 2021-01-13 22:11:31
+  regular_holiday: MyString
+  tel: 1
+  postal_code: 1
+  address: MyString
+
+two:
+  company: MyString
+  name: MyString
+  employee_num: 1
+  start_time: 2021-01-13 22:11:31
+  ending_time: 2021-01-13 22:11:31
+  regular_holiday: MyString
+  tel: 1
+  postal_code: 1
+  address: MyString
