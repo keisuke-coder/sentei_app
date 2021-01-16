@@ -1,38 +1,44 @@
 <div class="content-wrapper">
-  <h2>プロフィールの設定</h2>
-  <%= form_with(model: @profile, local: true) do |form| %>
-    <div class="content">
-      <%= form.label "会社名" %>
-      <%= form.text_field :company %>
-    </div>
-    <div class="content">
-      <%= form.label "名前" %>
-      <%= form.text_field :name %>
-    </div>
-    <div class="content">
-      <%= form.label "従業員数" %>
-      <%= form.number_field :employee_num %>
-    </div>
-    <div class="content">
-      <%= form.label "営業時間" %>
-      <%= form.time_field :start_ime %> ~ <%= form.time_field :ending_time %>
-    </div>
-    <div class="content">
-      <%= form.label "定休日" %>
-      <%= form.text_field :regular_holiday %>
-    </div>
-    <div class="content">
-      <%= form.label "電話番号" %>
-      <%= form.text_field :tel %>
-    </div>
-    <div class="content">
-      <%= form.label "郵便番号" %>
-      <%= form.text_field :postatl_code %>
-    </div>
-    <div class="content">
-      <%= form.label "住所" %>
-      <%= form.text_field :address %>
-    </div>
-    <%= form.submit "作成" %>
-  <% end %>
+  <div class="head-section">
+    <h2>プロフィール設定</h2>
+  </div>
+  <div class="content-block">
+    <%= form_with(model: @profile, local: true) do |form| %>
+      <div class="content">
+        <%= form.label "会社名" %>
+        <%= form.text_field :company %>
+      </div>
+      <div class="content">
+        <%= form.label "名前" %>
+        <%= form.text_field :name %>
+      </div>
+      <div class="content">
+        <%= form.label "従業員数" %>
+        <%= form.number_field :employee_num, placeholder: "半角数字" %>
+      </div>
+      <div class="content">
+        <%= form.label "営業時間" %>
+        <div class="time">
+          <%= form.time_field :start_ime %>&nbsp;〜&nbsp;<%= form.time_field :ending_time %>
+        </div>
+      </div>
+      <div class="content">
+        <%= form.label "定休日" %>
+        <%= form.text_field :regular_holiday %>
+      </div>
+      <div class="content">
+        <%= form.label "電話番号(ハイフンなし)" %>
+        <%= form.text_field :tel, placeholder: "半角数字" %>
+      </div>
+      <div class="content">
+        <%= form.label "郵便番号" %>
+        <%= form.text_field :postatl_code %>
+      </div>
+      <div class="content">
+        <%= form.label "住所" %>
+        <%= form.text_field :address %>
+      </div>
+      <%= form.submit "作成" %>
+    <% end %>
+  </div>
 </div>

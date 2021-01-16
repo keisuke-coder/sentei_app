@@ -1,8 +1,5 @@
 #profiles-index {
   .head-section {
-    padding: 10px;
-    border-bottom: solid 1px rgb(231, 228, 228);
-    
     input {
       padding: 10px;
       background-color: rgb(231, 228, 228);
@@ -171,6 +168,51 @@
 
 #profiles-new {
   .content-wrapper {
-    
+    .head-section {
+      h2{
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+    .content-block {
+      width: 70%;
+      margin: 20px auto;
+      
+      .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        input{
+          padding: 5px;
+          font-size: 16px;
+          outline: none;
+          border-radius: 3px;
+          border:solid 1px rgb(175, 173, 173);
+        }
+        input:focus {
+          outline: none;
+          border: solid 1px  rgb(44, 150, 44);
+        }
+      }
+
+      input[type="submit"] {
+        display: block;
+        margin: 10px auto;
+        width: 20%;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        color: rgb(44, 150, 44);
+        border: solid 1px rgb(44, 150, 44);
+        background-color: #fff;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgb(44, 150, 44);
+        color: #fff;
+      }
+    }
   }
 }

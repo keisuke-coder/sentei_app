@@ -17,6 +17,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   display: flex;
+  color: #333;
 }
 
 .content-wrapper {
