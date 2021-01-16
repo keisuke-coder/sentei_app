@@ -19,6 +19,12 @@ body {
   display: flex;
 }
 
+.content-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  border-right: solid 1px rgb(231, 228, 228);
+}
+
 a {
   color: #333;
   text-decoration: none;

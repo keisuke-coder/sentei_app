@@ -2,7 +2,6 @@
   .search {
     padding: 10px;
     border-bottom: solid 1px rgb(231, 228, 228);
-    border-right: solid 1px rgb(231, 228, 228);
     
     input {
       padding: 10px;
@@ -22,8 +21,6 @@
     }
   }
   .content-wrapper {
-    min-height: 100vh;
-    border-right: solid 1px rgb(231, 228, 228);
 
     .content {
       padding: 10px;
@@ -70,8 +67,6 @@
 
 #profiles-show {
   .content-wrapper {
-      min-height: 100vh;
-      border-right: 1px solid rgb(231, 228, 228);
     .content {
       display: flex;
       padding: 30px;
@@ -153,5 +148,11 @@
         background-color: rgb(232, 248, 232);
       }
     }
+  }
+}
+
+#profiles-new {
+  .content-wrapper {
+    
   }
 }
