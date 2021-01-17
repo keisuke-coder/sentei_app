@@ -132,35 +132,39 @@
 
     .item-list {
       margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      border-top: solid 1px rgb(231, 228, 228);
-      border-bottom: solid 1px rgb(231, 228, 228);
 
-      li {
-        border-right: solid 1px rgb(231, 228, 228);
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
         width: 100%;
-        text-align: center;
-      }
+        margin: 0 auto;
+        padding: 0;
+        border-top: solid 1px rgb(231, 228, 228);
+        border-bottom: solid 1px rgb(231, 228, 228);
 
-      li:last-child {
-        border-right: none;
-      }
+        li {
+          border-right: solid 1px rgb(231, 228, 228);
+          width: 100%;
+          text-align: center;
+        }
 
-      li a {
-        display: block;
-        font-size: 20px;
-        padding: 10px;
-        display: block;
-      }
+        li:last-child {
+          border-right: none;
+        }
 
-      li a:hover {
-        color: rgb(44, 150, 44);
-        background-color: rgb(232, 248, 232);
+        li a {
+          display: block;
+          font-size: 20px;
+          padding: 10px;
+          display: block;
+          font-weight: bold;
+        }
+
+        li a:hover {
+          color: rgb(44, 150, 44);
+          background-color: rgb(232, 248, 232);
+        }
       }
     }
   }
@@ -174,11 +178,11 @@
         font-size: 20px;
       }
     }
-    .content-block {
+    form {
       width: 70%;
       margin: 20px auto;
       
-      .content {
+      .field {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
@@ -196,23 +200,25 @@
         }
       }
 
-      input[type="submit"] {
-        display: block;
-        margin: 10px auto;
-        width: 20%;
-        padding: 10px;
-        border: none;
-        border-radius: 30px;
-        font-weight: bold;
-        color: rgb(44, 150, 44);
-        border: solid 1px rgb(44, 150, 44);
-        background-color: #fff;
-      }
+      .actions{
+        input {
+          display: block;
+          margin: 10px auto;
+          width: 20%;
+          padding: 10px;
+          border: none;
+          border-radius: 30px;
+          font-weight: bold;
+          color: rgb(44, 150, 44);
+          border: solid 1px rgb(44, 150, 44);
+          background-color: #fff;
+        }
 
-      input[type="submit"]:hover {
-        background-color: rgb(44, 150, 44);
-        color: #fff;
-      }
+        input:hover {
+          background-color: rgb(44, 150, 44);
+          color: #fff;
+        }
+      }   
     }
   }
 }
